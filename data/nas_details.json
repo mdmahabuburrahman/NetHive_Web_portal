@@ -1,0 +1,41 @@
+[
+    {
+        "id": "689326c0592db",
+        "nas_name": "Management-RT",
+        "nas_ip_port": "103.117.192.205:7328",
+        "username": "mkh-api",
+        "password": "mkh-api",
+        "hotspot_name": "Test",
+        "dns_name": "",
+        "currency": "BDT",
+        "session_timeout": "",
+        "live_report": "off",
+        "logo": ""
+    },
+    {
+        "id": "68964867d1a6b",
+        "nas_name": "Demo-2",
+        "nas_ip_port": "103.161.68.234:7828",
+        "username": "admin",
+        "password": "shahed26",
+        "hotspot_name": "hs-test",
+        "dns_name": "",
+        "currency": "BDT",
+        "session_timeout": "",
+        "live_report": "off",
+        "logo": ""
+    },
+    {
+        "id": "68b182c78fda9",
+        "nas_name": "My_Desk_router",
+        "nas_ip_port": "103.161.68.2:7328",
+        "username": "api",
+        "password": "api@123",
+        "hotspot_name": "Office",
+        "dns_name": "10.5.50.1",
+        "currency": "BDT",
+        "session_timeout": "",
+        "live_report": "off",
+        "logo": ""
+    }
+]

@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "fullName": "Admin User",
+            "username": "admin",
+            "password": "$2y$10$rKNsEZIWJzfLvaWFQj70COWFfK38yiDnyFvb.e9Xf3aEG9HjUASYW",
+            "role": "admin"
+        },
+        {
+            "fullName": "sagor",
+            "username": "sagor",
+            "password": "$2y$10$VyToNWmbgTm5FnsGhREj9etQ03umTjA54Iqn1l6VkhMBjSK\/LhcMi",
+            "role": "admin"
+        }
+    ]
+}

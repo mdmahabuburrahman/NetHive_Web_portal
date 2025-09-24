@@ -1,0 +1,231 @@
+/* Queue Items Styling */
+.sortable-queue-list {
+    min-height: 200px;
+    padding: 10px;
+}
+
+.queue-item {
+    background: #fff;
+    border: 1px solid #e3e6f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: move;
+}
+
+.queue-item:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.queue-item-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.queue-item-drag-handle {
+    color: #6c757d;
+    cursor: grab;
+    font-size: 16px;
+}
+
+.queue-item-drag-handle:active {
+    cursor: grabbing;
+}
+
+.queue-item-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.queue-item-icon::before {
+    content: "Q";
+}
+
+.queue-item-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: #2c3e50;
+    min-width: 120px;
+}
+
+.queue-item-details {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.queue-detail-inline {
+    display: flex;
+    flex-direction: column;
+}
+
+.queue-detail-label {
+    font-size: 11px;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+.queue-detail-value {
+    font-size: 13px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.upload-indicator {
+    color: #e74c3c !important;
+}
+
+.download-indicator {
+    color: #27ae60 !important;
+}
+
+.queue-item-actions {
+    display: flex;
+    gap: 5px;
+}
+
+.queue-item-actions .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.queue-item-actions .btn:hover {
+    transform: scale(1.1);
+}
+
+.queue-item-actions .btn:first-child {
+    background: #3498db;
+    color: white;
+}
+
+.queue-item-actions .btn:nth-child(2) {
+    background: #f39c12;
+    color: white;
+}
+
+.queue-item-actions .btn:last-child {
+    background: #e74c3c;
+    color: white;
+}
+
+/* Priority Classes */
+.priority-high {
+    border-left: 4px solid #e74c3c;
+}
+
+.priority-medium {
+    border-left: 4px solid #f39c12;
+}
+
+.priority-low {
+    border-left: 4px solid #27ae60;
+}
+
+/* Status Badges */
+.status-enabled {
+    background: #27ae60 !important;
+    color: white !important;
+}
+
+.status-disabled {
+    background: #95a5a6 !important;
+    color: white !important;
+}
+
+/* Drag and Drop States */
+.sortable-ghost {
+    opacity: 0.5;
+    background: #f8f9fa;
+}
+
+.sortable-chosen {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.sortable-drag {
+    transform: rotate(5deg);
+    z-index: 1000;
+}
+
+.dragging {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.drag-feedback {
+    animation: dragSuccess 0.3s ease;
+}
+
+@keyframes dragSuccess {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); background: #d4edda; }
+    100% { transform: scale(1); }
+}
+
+/* Compact Modal Styling */
+.compact-modal .modal-dialog {
+    max-width: 350px !important;
+}
+
+.compact-modal .modal-body {
+    padding: 15px !important;
+}
+
+.compact-modal .mb-3 {
+    margin-bottom: 0.75rem !important;
+}
+
+.compact-modal .form-label {
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+}
+
+.compact-modal .text-muted {
+    font-size: 0.75rem;
+}
+
+.compact-modal .modal-header {
+    padding: 10px 15px;
+}
+
+.compact-modal .modal-footer {
+    padding: 10px 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .queue-item-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .queue-item-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .queue-item-actions {
+        align-self: flex-end;
+    }
+}

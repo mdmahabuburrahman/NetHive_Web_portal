@@ -1,0 +1,173 @@
+.dataTables_wrapper {
+  font-family: inherit;
+}
+.dataTables_wrapper .dataTables_length select {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  background: #fff
+    url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e")
+    no-repeat right 0.75rem center/16px 12px;
+  color: #495057;
+  appearance: none;
+}
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+  background-color: #fff;
+  color: #495057;
+  margin-left: 0.5rem;
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_paginate {
+  color: #6c757d;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0.5rem 0.75rem;
+  margin: 0 0.125rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  background: #fff;
+  color: #6c757d !important;
+  text-decoration: none;
+  display: inline-block;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+  color: #495057 !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%) !important;
+  border-color: #667eea;
+  color: #fff !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled {
+  color: #6c757d !important;
+  background: #fff;
+  border-color: #dee2e6;
+  opacity: 0.65;
+}
+.dataTables_wrapper .dataTables_length {
+  float: left;
+}
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+}
+.dataTables_wrapper .dataTables_info {
+  clear: both;
+  float: left;
+  padding-top: 0.75rem;
+}
+.dataTables_wrapper .dataTables_paginate {
+  float: right;
+  text-align: right;
+  padding-top: 0.25rem;
+}
+
+/* Nav Tabs Styling */
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 1rem;
+}
+
+.nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #6c757d;
+  background-color: transparent;
+  padding: 0.75rem 1rem;
+  margin-bottom: -1px;
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-tabs .nav-link:hover {
+  border-color: #e9ecef #e9ecef #dee2e6;
+  color: #495057;
+  background-color: #f8f9fa;
+}
+
+.nav-tabs .nav-link.active {
+  color: #495057;
+  background: linear-gradient(180deg, #e3e7ff 0%, #f0e6ff 100%);
+  border-color: #c7d2fe #c7d2fe #fff;
+  border-bottom-color: transparent;
+}
+
+.nav-tabs .nav-link i {
+  font-size: 0.875rem;
+}
+/* Add User Profile Modal Styles */
+#addUserProfileModal .modal-dialog {
+  max-width: 400px;
+}
+
+#addUserProfileModal .modal-body {
+  padding: 1rem;
+}
+
+#addUserProfileModal .nav-pills .nav-link {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border-radius: 1rem;
+}
+
+#addUserProfileModal .nav-pills .nav-link.active {
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+}
+
+#addUserProfileModal .form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+#addUserProfileModal .form-control-sm,
+#addUserProfileModal .form-select-sm {
+  font-size: 0.875rem;
+  padding: 0.375rem 0.5rem;
+}
+
+#addUserProfileModal .text-muted {
+  font-size: 0.75rem;
+}
+
+#addUserProfileModal .modal-footer {
+  padding: 0.75rem 1rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Mobile-friendly NAS selector styles */
+@media (max-width: 767.98px) {
+  .navbar-nav .dropdown-menu {
+    border: 1px solid #dee2e6;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  
+  .navbar-nav .dropdown-header {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .navbar-nav .nav-item .nav-link i {
+    font-size: 1.1rem;
+  }
+  
+  #addUserProfileModal .modal-dialog {
+    margin: 1rem;
+    max-width: calc(100% - 2rem);
+  }
+}

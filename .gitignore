@@ -1,0 +1,17 @@
+# Debug logs
+data/webblocking_debug.log
+
+# Other log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
