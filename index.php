@@ -18,7 +18,8 @@ $allowed_roles = [
     'apiUserManagement' => ['admin'],
     'settings' => ['admin'],
     'userlogs' => ['admin', 'operator'],
-    'webBlocking' => ['admin', 'operator']
+    'webBlocking' => ['admin', 'operator'],
+    'internetControl' => ['admin', 'operator']
 ];
 
 // Default page is dashboard
@@ -38,7 +39,8 @@ $allowed_pages = [
     'apiUserManagement',
     'settings',
     'userlogs',
-    'webBlocking'
+    'webBlocking',
+    'internetControl'
 ];
 
 // Create a mapping of page names to display titles
@@ -52,7 +54,8 @@ $page_titles = [
     'apiUserManagement' => 'API User Management',
     'settings' => 'Settings',
     'userlogs' => 'User Logs',
-    'webBlocking' => 'Web Blocking'
+    'webBlocking' => 'Web Blocking',
+    'internetControl' => 'Internet Control'
 ];
 
 // Validate if the requested page exists and is allowed

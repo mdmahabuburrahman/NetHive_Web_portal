@@ -25,12 +25,14 @@
           <!-- End plugin js for this page -->
           <!-- Toast Manager -->
           <script src="assets/js/toast-manager.js"></script>
+          <!-- Sidebar Toggle -->
+          <script src="assets/js/sidebar-toggle.js"></script>
           <!-- endinject -->
           <!-- Custom js for this page -->
           <!-- Conditional NAS Management JS -->
           <?php
           // Load navbar connection manager for specific pages
-          $navbar_connection_pages = ['dashboard', 'hotspot', 'queue', 'userlogs', 'webBlocking', 'reports'];
+          $navbar_connection_pages = ['dashboard', 'hotspot', 'queue', 'userlogs', 'webBlocking', 'reports', 'internetControl'];
           if (in_array($page, $navbar_connection_pages)) {
             echo '<script src="assets/js/views/navbar-connection.js"></script>';
           }

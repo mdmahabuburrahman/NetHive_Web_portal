@@ -47,6 +47,13 @@
         </li>
 
         <li class="nav-item">
+            <a class="nav-link" href="index.php?page=internetControl">
+                <span class="menu-title">Internet Control</span>
+                <i class="fa fa-shield menu-icon"></i>
+            </a>
+        </li>
+
+        <li class="nav-item">
             <a class="nav-link" href="index.php?page=userlogs">
                 <span class="menu-title">User Logs</span>
                 <i class="fa fa-history menu-icon"></i>
