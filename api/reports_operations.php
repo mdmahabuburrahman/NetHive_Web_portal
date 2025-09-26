@@ -1,5 +1,9 @@
 <?php
+require_once 'auth_check.php';
 require_once 'routeros_api.class.php';
+
+// Require authentication for reports (all roles can view)
+checkAuth(['admin', 'operator', 'viewer']);
 
 header('Content-Type: application/json');
 

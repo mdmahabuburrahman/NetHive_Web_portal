@@ -1,0 +1,21 @@
+# Disable directory browsing
+Options -Indexes
+
+# Deny access to sensitive files
+<Files "*.json">
+    Require all denied
+</Files>
+
+<Files "*.log">
+    Require all denied
+</Files>
+
+<Files ".htaccess">
+    Require all denied
+</Files>
+
+# Redirect all requests to index.php except allowed files
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/(login\.php|logout\.php|export_csv\.php|api/.*\.php|assets/.*)$
+RewriteRule ^(.*)$ index.php [QSA,L]

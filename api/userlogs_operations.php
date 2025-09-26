@@ -1,5 +1,9 @@
 <?php
+require_once 'auth_check.php';
 require_once 'routeros_api.class.php';
+
+// Require admin/operator for user logs
+checkAuth(['admin', 'operator']);
 
 class UserLogsOperations {
     private $api;

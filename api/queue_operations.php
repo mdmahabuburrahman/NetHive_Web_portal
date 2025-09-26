@@ -5,7 +5,11 @@
  * Handles all queue-related operations for MikroTik RouterOS
  */
 
+require_once 'auth_check.php';
 require_once 'routeros_api.class.php';
+
+// Require admin/operator for queue management
+checkAuth(['admin', 'operator']);
 
 class QueueOperations
 {

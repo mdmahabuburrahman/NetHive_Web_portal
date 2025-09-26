@@ -1,11 +1,8 @@
 <?php
-session_start();
+require_once 'api/auth_check.php';
 
-// Authentication check
-if (!isset($_SESSION['user'])) {
-    header('Location: login.php');
-    exit;
-}
+// Require admin/operator for CSV export
+checkAuth(['admin', 'operator']);
 
 $log_base_path = '/var/log/remotelogs/hotspotRT_parsed';
 $selected_nas = $_GET['nas'] ?? '';

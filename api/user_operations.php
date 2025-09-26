@@ -1,4 +1,9 @@
 <?php
+require_once 'auth_check.php';
+
+// Require admin role for user management
+checkAuth(['admin']);
+
 header('Content-Type: application/json');
 
 $dataFile = '../data/users.json';

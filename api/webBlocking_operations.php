@@ -1,11 +1,14 @@
 <?php
+require_once 'auth_check.php';
+require_once 'routeros_api.class.php';
+
+// Require admin/operator for web blocking
+checkAuth(['admin', 'operator']);
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header('Access-Control-Allow-Headers: Content-Type');
-
-
-require_once 'routeros_api.class.php';
 
 function logDebug($message)
 {

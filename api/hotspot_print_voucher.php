@@ -1,5 +1,9 @@
 <?php
-session_start();
+require_once 'auth_check.php';
+
+// Require admin/operator for voucher printing
+checkAuth(['admin', 'operator']);
+
 error_reporting(0);
 
 function loadNasData()

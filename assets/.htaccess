@@ -1,0 +1,7 @@
+# Disable directory browsing but allow asset access
+Options -Indexes
+
+# Allow access to CSS, JS, images, fonts
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)$">
+    Require all granted
+</FilesMatch>

@@ -1,5 +1,9 @@
 <?php
+require_once 'auth_check.php';
 require_once 'routeros_api.class.php';
+
+// Require admin/operator for internet control
+checkAuth(['admin', 'operator']);
 
 header('Content-Type: application/json');
 

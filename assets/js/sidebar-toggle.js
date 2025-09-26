@@ -19,6 +19,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Handle fullscreen toggle
+    const fullscreenButton = document.getElementById('fullscreen-button');
+    if (fullscreenButton) {
+        fullscreenButton.addEventListener('click', function() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+                fullscreenButton.className = 'fa fa-compress';
+            } else {
+                document.exitFullscreen();
+                fullscreenButton.className = 'fa fa-square-o';
+            }
+        });
+    }
+    
+    // Listen for fullscreen changes (ESC key, etc.)
+    document.addEventListener('fullscreenchange', function() {
+        if (fullscreenButton) {
+            if (document.fullscreenElement) {
+                fullscreenButton.className = 'fa fa-compress';
+            } else {
+                fullscreenButton.className = 'fa fa-square-o';
+            }
+        }
+    });
+    
     // Close sidebar when clicking outside on mobile
     document.addEventListener('click', function(event) {
         if (window.innerWidth <= 991) {

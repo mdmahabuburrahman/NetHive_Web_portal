@@ -1,5 +1,9 @@
 <?php
+require_once 'auth_check.php';
 require_once 'routeros_api.class.php';
+
+// Require authentication for all dashboard operations
+checkAuth(['admin', 'operator', 'viewer']);
 
 class DashboardController
 {

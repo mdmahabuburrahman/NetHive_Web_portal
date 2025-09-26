@@ -1,0 +1,11 @@
+# Disable directory browsing
+Options -Indexes
+
+# Deny direct access to all files except PHP API files
+<Files "*">
+    Require all denied
+</Files>
+
+<Files "*.php">
+    Require all granted
+</Files>

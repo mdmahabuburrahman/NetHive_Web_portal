@@ -11,6 +11,18 @@
             "username": "sagor",
             "password": "$2y$10$VyToNWmbgTm5FnsGhREj9etQ03umTjA54Iqn1l6VkhMBjSK\/LhcMi",
             "role": "admin"
+        },
+        {
+            "fullName": "op",
+            "username": "op",
+            "password": "$2y$10$rDyInXpZITmIKlZzxOARfecIyugn1Bi\/jZI5XDgwEZh5mTNYvmU66",
+            "role": "operator"
+        },
+        {
+            "fullName": "vv",
+            "username": "vv",
+            "password": "$2y$10$ov3\/kcq6p.qugVxQK87YkeV12Co3v1sKXC7RO33VD1XQc29lpCFZm",
+            "role": "viewer"
         }
     ]
 }

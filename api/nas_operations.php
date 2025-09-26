@@ -1,4 +1,9 @@
 <?php
+require_once 'auth_check.php';
+
+// Require admin role for NAS management
+checkAuth(['admin']);
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');

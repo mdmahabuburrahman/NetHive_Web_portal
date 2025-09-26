@@ -1,0 +1,3 @@
+# Disable directory browsing and deny direct access
+Options -Indexes
+Require all denied
